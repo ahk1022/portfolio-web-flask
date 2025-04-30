@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: portfolio
+  name: portfolio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portfolio
+  template:
+    metadata:
+      labels:
+        app: portfolio
+    spec:
+      containers:
+      - image: ahk3983/portfolio-lite:latest
+        name: csshop
+        ports:
+        - containerPort: 5000
+          name: portfolio
