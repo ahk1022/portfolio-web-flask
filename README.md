@@ -104,4 +104,7 @@ sum(rate(container_network_transmit_bytes_total{namespace="default"}[5m])) by (p
 
 
 ---
-
+Grafana username and password
+```bash
+admin
+prom-operator
