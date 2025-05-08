@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - image: ahk3983/portfolio-lite:latest
-        name: csshop
+        name: portfolio
         ports:
         - containerPort: 5000
           name: portfolio
